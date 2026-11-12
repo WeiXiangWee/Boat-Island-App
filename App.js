@@ -59,16 +59,30 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#EAF6F6',
-    alignItems: 'center',
-    padding: 20,
-  },
-  title: {
-    fontFamily: 'Poppins_700Bold',
-    fontSize: 28,
-    color: '#164E63',
-    marginBottom: 20,
-  },
-});
+    safeArea: {
+      flex: 1,
+      backgroundColor: '#EAF6F6',
+    },
+    container: {
+      padding: 20,
+      paddingBottom: 40,
+    },
+    header: {
+      marginTop: 20,
+      marginBottom: 24,
+      alignItems: 'center',
+    },
+    title: {
+      fontFamily: 'Poppins_700Bold',
+      fontSize: 28,
+      color: '#164E63',
+      textAlign: 'center',
+    },
+    subtitle: {
+      fontFamily: 'Poppins_400Regular',
+      fontSize: 14,
+      color: '#4B7A87',
+      textAlign: 'center',
+      marginTop: 4,
+    },
+  })
