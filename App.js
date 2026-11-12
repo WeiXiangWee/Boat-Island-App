@@ -18,11 +18,15 @@ export default function App() {
   }
 
   return (
-
-
-      <ScrollView>
-        <View style={styles.container}>
-          <Text style={styles.title}>Islands of Singapore</Text>
+      <View style={styles.screen}>
+        <StatusBar style="dark" />
+        <ScrollView contentContainerStyle={styles.container}>
+          <View style={styles.header}>
+            <Text style={styles.title}>Islands of Singapore</Text>
+            <Text style={styles.subtitle}>
+              Discover the offshore islands around the Lion City
+            </Text>
+          </View>
           <Island
               name  = "Pulau Ubin"
               description = "A rustic island in northeastern Singapore known for its traditional village atmosphere, cycling trails, forests, and Chek Jawa wetlands. It is a great place to experience Singapore's natural environment."
@@ -53,15 +57,16 @@ export default function App() {
               description = "A popular resort island featuring beaches, attractions, hotels, and recreational activities. It is one of Singapore's best-known destinations for entertainment and leisure."
               picture={require('./img/sentosa.jpg')}/>
           <StatusBar style="auto" />
-        </View>
+
       </ScrollView>
+      </View>
   );
 }
 
 const styles = StyleSheet.create({
-    safeArea: {
+    screen: {
       flex: 1,
-      backgroundColor: '#EAF6F6',
+      backgroundColor: '#EAF6F6'
     },
     container: {
       padding: 20,
